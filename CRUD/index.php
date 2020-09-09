@@ -27,7 +27,7 @@
 		$result = $mysqli->query("SELECT * FROM datos") or die($mysqli->error);
 		/*pre_r($result);
 		pre_r($result->fetch_assoc());
-		pre_r($result->fetch_assoc());confirmar campos*/
+		pre_r($result->fetch_assoc());confirmar campos bd*/
 
 
 		?>
