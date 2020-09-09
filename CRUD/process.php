@@ -54,6 +54,9 @@ if (isset($_GET['edit'])){
 
 
 
+// en una URL eso es GET y cuando envío un formulario es POST.
+// Tanto el método GET como POST son protocolo HTPP el cual envía al servidor como petición (request) y recibe una respuesta a dicha solicitud (response)
+
 
 
 

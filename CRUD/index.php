@@ -23,7 +23,7 @@
 	<div class="container" >
 
 	<?php 
-		$mysqli = new mysqli('localhost', 'root' , '' , 'crud' ) or die(mysqli_error($mysqli));
+		$mysqli = new mysqli('localhost', 'root' , '' , 'crud' ) or die(mysqli_error($mysqli));//conexion BD
 		$result = $mysqli->query("SELECT * FROM datos") or die($mysqli->error);
 		/*pre_r($result);
 		pre_r($result->fetch_assoc());
@@ -41,9 +41,9 @@
 						</tr>
 					</thead>
 			<?php
-				while ($row = $result->fetch_assoc()): ?>
+				while ($row = $result->fetch_assoc()): ?> <!-- array asociativo -->
 					<tr>
-						<td><?php echo $row['NAME']; ?> </td>
+						<td><?php echo $row['NAME']; ?> </td> <!-- se obtiene fila -->
 						<td><?php echo $row['UBICACION']; ?> </td>
 						<td>
 							
